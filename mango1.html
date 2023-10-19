@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .header {
+    background-color:  rgb(36, 63, 219);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInFromTop 1s ease-in-out forwards;
+  }
+  
+  .section {
+    background-color:  #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInFromLeftRight 1s ease-in-out forwards;
+  }
+  
+  .section:nth-child(odd) {
+    animation: fadeInFromLeftRight 1s ease-in-out forwards;
+  }
+  
+  .mango-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    opacity: 0;
+    filter: blur(10px);
+    animation: fadeInAndBlur 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeInFromTop {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInFromLeftRight {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInFromRightLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInAndBlur {
+    to {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  footer {
+    background-color: #025402;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer h3 {
+    margin: 0;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  .social-media {
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    color: #131212;
+    margin-right: 10px;
+  }
+  .move1{
+    float: right;
+  }
+  
+
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Banaganapalle Mangoes: Benefits and Importance</h1>
+  </div>
+  
+  <div class="section">
+    <h2 style="text-align: center;">Banaganapalle Mangoes</h2>
+    <center><img class="mango-image" src="mango1.png" height="200px" width="200px" alt="Banaganapalle Mango"></center>
+    <p>Banaganapalle mangoes are a popular variety known for their distinctive taste, aroma, and sweetness. They are named after the town of Banaganapalle in Andhra Pradesh, India, where they are primarily grown.</p>
+  </div>
+  
+  <div class="section">
+    <h2>Benefits of Banaganapalle Mangoes</h2>
+    <p>Banaganapalle mangoes offer numerous health benefits:</p>
+    <ul class="benefits-list">
+      <li>High in vitamins A, C, and E</li>
+      <li>Rich in dietary fiber</li>
+      <li>Natural source of antioxidants</li>
+      <li>May help boost the immune system</li>
+      <li>Supports digestive health</li>
+    </ul>
+  </div>
+  
+  <div class="section">
+    <h2>Importance of Banaganapalle Mangoes</h2>
+    <p>Banaganapalle mangoes hold cultural and economic significance:</p>
+    <p>They are celebrated for their unique flavor and are often used in various culinary dishes, desserts, and beverages.</p>
+    <p>The cultivation and trade of Banaganapalle mangoes contribute to the local economy and promote agricultural growth.</p>
+  </div>
+  <footer>
+    <div class="container4">
+        <div class="contact-info1">
+            <h3>Contact Us</h3>
+            <p>Email: contact@example.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+            <p>Address: 123 Main Street, City, State, Zip Code</p>
+        </div>
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <!-- Add social media icons here with appropriate links -->
+        </div>
+    </div>
+</footer>
+</body>
+</html>

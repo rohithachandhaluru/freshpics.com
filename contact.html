@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Farm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="hedder">
+    <nav>
+       <a href=#><img src="logo.png" class="logo"></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa"><img src="close.png" height="20px" width="20px" onclick="hidemenu()"></i>
+
+            <ul>
+              <li class="a"><a href="index.html">HOME &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+              <li class="b"><a href="products.html">PRODUCTS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+              <li class="c"><a href="goshala.html">GOSHALA &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+              <li class="f"><a href="attr.html">ATTRACATIONS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+              <li class="e"><a href="bookings.html">BOOKINGS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+              <li class="c"><a href="contact.html">CONTACT &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+              <li class="d"><a href="about.html">ABOUT &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+               
+            </ul>  
+        </div>
+        <i class="faa"><img src="menu.png" height="20px" width="20px" onclick="showmenu()"></i>
+    </nav>
+  </section>
+    <section class="contact-section">
+        <div class="containerz">
+          <h2>Contact Information</h2>
+          <div class="contact-details">
+            
+            <div class="contact-info">
+              <h3>E-mail</h3>
+              <p>contact@freshpicsfarm.com</p> <br>
+              <h3>Phone Number</h3>
+              <p>+1 (555) 123-4567</p>
+            </div>
+            <div class="contact-info">
+              <h3>Physical Address</h3>
+              <p>123 Main Street, City, State, Zip Code</p>
+            </div>
+          
+            <div class="contact-info">
+              <h3>Business Hours</h3>
+              <br><p>Mon - Sat: 11.00AM - 7.00PM</p>
+              <p>Sunday: Closed</p>
+            </div>
+            <div class="contact-info">
+              <h3>Privacy Policy and Terms of Service</h3>
+              <p><a href="policy.html" target="_blank">Privacy Policy&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br></a></p>
+              <p><a href="terms.html" target="_blank">Terms of Service</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <BR><BR><h1 style="text-align: center;">CONTACT &nbspFORM</h1>
+        <div class="contact-forms-container">
+          <div class="contact-form">
+            <h2>Are You A Buyer</h2>
+            <h5 style="text-align: center;">If Yes, Click on continue</h5><br>
+            <form id="buyerForm" action="register1.html" method="post">
+              <div class="radio-container">
+                <label for="buyer">Buyer</label>
+                <input type="radio" id="buyer" name="userType" value="buyer">
+              </div>
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <button type="button" onclick="redirectToPage('register1')">Continue</button>
+            </form>
+          </div>
+      
+          <div class="contact-form">
+            <h2>Are You A Visitor</h2>
+            <h5 style="text-align: center;">If Yes, Check The Option Below</h5><br>
+            <form id="visitorForm" action="visitor.html" method="post">
+              <div class="radio-container">
+                <label for="visitor">Visitor</label>
+                <input type="radio" id="visitor" name="userType" value="visitor">
+              </div>
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <button type="button" onclick="redirectToPage('visitor')">Continue</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+
+        
+          <script>
+            function redirectToPage() {
+              var userType = document.querySelector('input[name="userType"]:checked').value;
+              if (userType === "visitor") {
+                window.location.href = "visitor.html";
+              } else if (userType === "buyer") {
+                window.location.href = "register1.html";
+              }
+            }
+          </script>
+      
+      </section>
+    
+      <script>
+        function redirectToPage() {
+          var userType = document.querySelector('input[name="userType"]:checked').value;
+          if (userType === "visitor") {
+            window.location.href = "visitor.html";
+          } else if (userType === "buyer") {
+            window.location.href = "register1.html";
+          }
+        }
+      </script>
+       
+        
+        <section class="customer-support">
+            <div class="container">
+              <h2>Customer Support</h2>
+              <p>Our team is here to assist you. If you have any questions or need help, feel free to reach out to us.</p>
+              <div class="contact-info">
+                <div class="contact-info-item">
+                  <h3>Email</h3>
+                  <p>Contact us via email at: <a href="mailto:customersupport@freshpicks.com">customersupport@freshpicks.com</a></p>
+                </div>
+                <div class="contact-info-item">
+                  <h3>Social Media Links</h3>
+                  <a href=https://www.instagram.com><img target="_blank" src="insta.png" class="fab fa-instagram" height="28px" width="28px"></a>
+                  &nbsp&nbsp&nbsp <a href=https://www.twitter.com><img target="_blank" src="twitter.png" class="fab fa-twitter" height="30px" width="30px"></a>
+                  &nbsp&nbsp&nbsp <a href=https://www.facebook.com><img target="_blank" src="facebook.png" class="fab fa-twitter" height="30px" width="30px"></a>
+                 
+                </div>
+                <div class="contact-info-item">
+                  <h3>Working Hours</h3>
+                  <p>Monday to Friday: 11.00am - 7.00pm</p>
+                  <p>Saturday and Sunday: Closed</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <footer>
+            <div class="container4">
+                <div class="contact-info1">
+                    <h3>Contact Us</h3>
+                    <p>Email: contact@example.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: 123 Main Street, City, State, Zip Code</p>
+                </div>
+                <div class="social-media">
+                    <h3>Follow Us</h3><br>
+                    <a href=https://www.instagram.com target="_blank"><img  src="insta.png" class="fab fa-instagram" height="28px" width="28px"></a>
+                  &nbsp&nbsp&nbsp <a href=https://www.twitter.com target="_blank"><img  src="twitter.png" class="fab fa-twitter" height="30px" width="30px"></a>
+                  &nbsp&nbsp&nbsp <a href=https://www.facebook.com target="_blank"><img  src="facebook.png" class="fab fa-twitter" height="30px" width="30px"></a>
+                    <!-- Add social media icons here with appropriate links -->
+                </div>
+            </div>
+        </footer>
+        <script>
+          var navlinks= document.getElementById("navlinks");
+          function showmenu(){
+            navlinks.style.right="0";
+          }
+          function hidemenu(){
+            navlinks.style.right="-200px";
+          }
+         </script>
+</body>
+</html>

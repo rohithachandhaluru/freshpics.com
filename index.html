@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My farm</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://fontawesome.com/v4/icon/bars" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="hedder">
+        <nav>
+           <a href=#><img src="logo.png" class="logo"></a>
+            <div class="nav-links" id="navlinks">
+              <i class="fa"><img src="close.png" height="20px" width="20px" onclick="hidemenu()"></i>
+
+                <ul>
+                  <li class="a"><a href="index.html">HOME &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+                  <li class="b"><a href="products.html">PRODUCTS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+                  <li class="c"><a href="goshala.html">GOSHALA &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+                  <li class="f"><a href="attr.html">ATTRACATIONS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+                  <li class="e"><a href="bookings.html">BOOKINGS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+                  <li class="c"><a href="contact.html">CONTACT &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+                  <li class="d"><a href="about.html">ABOUT &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+                   
+                </ul>  
+            </div>
+            <i class="faa"><img src="menu.png" height="20px" width="20px" onclick="showmenu()"></i>
+        </nav>
+    </section>
+    
+
+    <section class="hero"></section>
+        <div class="text-box">
+            <h2 style="text-align: center;">WELCOME TO KG FARMS</h2>
+            <p id="p" class="right"><b>Welcome to KG farms!<br> We are a delightful farm dedicated to bringing you the freshest and<br> tastiest fruits from our expansive 100-acre. <br>Our passion lies in cultivating a diverse selection <br>of seasonal fruits, carefully handpicked to ensure <br>unparalleled quality and flavor.</p><p class="q"> at KG farms, we take<br> pride in providing you with a bountiful assortment <br>nature's finest offerings, straight from our fields.<br> Join us on this flavorful journey as we invite you to <br> goodness of our naturally grown fruits, harvested<br> with love and care. Experience the essence<br> of freshness with every bite at KG farms!</b> </p>
+            <a href="bookings.html" class="hero-btn" style="color: rgb(0, 58, 4);"><b>BOOKINGS</b></a>
+        </div>
+   </section>
+   <script>
+    var navlinks= document.getElementById("navlinks");
+    function showmenu(){
+      navlinks.style.right="0";
+    }
+    function hidemenu(){
+      navlinks.style.right="-200px";
+    }
+   </script>
+</body>
+</html>

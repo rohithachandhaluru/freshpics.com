@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visitor Contact Form</title>
+  <style>
+    @media (max-width: 768px) {
+      .contact-form {
+        max-width: 100%; /* Adjust the maximum width for responsiveness */
+        padding: 20px; /* Adjust padding for spacing */
+      }
+    
+      .input-container {
+        margin-bottom: 15px; /* Adjust spacing between input fields */
+      }
+    
+      .input-container label {
+        font-size: 14px; /* Adjust font size for labels */
+      }
+    
+      .input-container input[type="text"],
+      .input-container input[type="email"],
+      .input-container input[type="time"],
+      .input-container input[type="date"],
+      .input-container input[type="number"],
+      .input-container select {
+        padding: 8px; /* Adjust padding for input fields */
+      }
+    
+      .submit-btn {
+        padding: 8px 15px; /* Adjust padding for submit button */
+        font-size: 14px; /* Adjust font size for submit button */
+        
+      }
+    }
+    
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f5f5f5;
+    }
+
+    .contact-form {
+      max-width: 390px;
+      max-height: 150%;
+      padding-left: 55px;
+      padding-right: 55px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      animation: slide-up 0.6s forwards;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      animation: slide-in-bottom 0.6s forwards;
+      opacity: 0;
+      transform: translateY(50px);
+      color: #007bff;
+    }
+
+    .input-container {
+      margin-bottom: 20px;
+      animation: slide-in-top 0.6s forwards;
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+
+    .input-container label {
+      display: block;
+      font-weight: bold;
+      transition: color 0.3s; /* Transition effect on label color */
+    }
+
+    .input-container input[type="text"],
+    .input-container input[type="email"],
+    .input-container input[type="time"],
+    .input-container input[type="date"],
+    .input-container input[type="number"],
+    .input-container select {
+      width: 100%;
+      height: 120%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s; /* Transition effect on border color */
+    }
+
+    .input-container input[type="time"] {
+      width: auto;
+    }
+
+    .input-container:hover label {
+      color: #007bff; /* Change label color on hover */
+    }
+
+    .input-container input[type="text"]:hover,
+    .input-container input[type="email"]:hover,
+    .input-container input[type="time"]:hover,
+    .input-container input[type="date"]:hover,
+    .input-container select:hover {
+      border-color: #007bff; /* Change border color on hover */
+    }
+
+    .submit-btn {
+      background-color: #007bff;
+      color: #fff;
+      padding: 7px 10px;
+      margin-bottom: 10px; /* Add margin to the top of the button */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s; /* Transition effect on button background color */
+    }
+    
+
+    .submit-btn:hover {
+      background-color: #0056b3;
+    }
+
+    @keyframes slide-up {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slide-in-top {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slide-in-bottom {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-form">
+    <h2 style="text-align: center; color:#007bff">Buyer's Contact Form</h2>
+    <form id="visitorForm" action="register1.php" method="post">
+      <div class="input-container">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="input-container">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-container">
+      <label for="slot">Select a Fruit:</label>
+      <select id="slot" name="fruit" required>
+      <option value="">-- Select a Mango variety --</option>
+      <option value="apple"> Banaganapalle</option>
+      <option value="mango">Neelam</option>
+      <option value="banana">Hima Pashand</option>
+    </select>
+    </div>
+    <div class="input-container">
+    <label for="quantity">How Many Fruits (in dozens):</label>
+    <input type="number" id="quantity" name="quantity" min="1" required>
+    </div>
+    <div class="input-container">
+       <label for="date">Preferred Date:</label>
+       <input type="date" id="date" name="date" required>
+    </div>
+
+      <div class="input-container">
+        <label for="slot">Select a Slot:</label>
+        <select id="slot" name="visit" required>
+          <option value="">-- Select Slot --</option>
+          <option value="11to1">11.00 AM to 1.00 PM</option>
+          <option value="1to3">1.00 PM to 3.00 PM</option>
+          <option value="3to5">3.00 PM to 5.00 PM</option>
+          <option value="5to7">5.00 PM to 7.00 PM</option>
+        </select>
+      </div>
+      
+      <div class="input-container">
+        <label for="payment">Entrance Charge:</label>
+        <p>Have to pay 50 rs per head as entrance charge</p>
+      </div>
+      <button type="submit" class="submit-btn">Book Slot</button>
+    </form>
+  </div>
+</body>
+</html>

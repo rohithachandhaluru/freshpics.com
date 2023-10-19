@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Farm</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+    .community-projects {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        padding-left: 80px;
+        padding-right: 60px;
+      }
+      
+      .project {
+        position: relative;
+        width: 30%;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.9s;
+      }
+      
+      .project img {
+        width: 100%;
+      }
+      
+      .project h3 {
+        font-size: 24px;
+        margin-top: 10px;
+        text-align: center;
+      }
+      
+      .project p {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+        padding: 10px;
+      }
+      
+      .project:hover {
+        transform: scale(1.05);
+      }
+      
+      .project:nth-child(2) {
+        animation: slideFromTop 1.6s;
+      }
+      
+      .project:nth-child(1){
+        animation: slideFromRight 1.6s;
+      }
+      .project:nth-child(3) {
+        animation: slideFromLeft 1.6s;
+      }
+      
+      @keyframes slideFromLeft {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+      
+      @keyframes slideFromRight {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+      
+      @keyframes slideFromBottom {
+        from {
+          transform: translateY(100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+      /* Media Query for screens with a width less than 768px */
+@media (max-width: 768px) {
+
+
+  /* Community Projects section */
+  .community-projects {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .project {
+    width: 100%;
+    margin-bottom: 30px;
+    animation: none;
+    transition: none;
+  }
+
+  /* Footer */
+  footer .contact-info1,
+  footer .social-media {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  footer .social-media img {
+    margin-right: 10px;
+  }
+}
+
+      
+  </style>
+</head>
+<body>
+  <section class="hedder">
+    <nav>
+       <a href=#><img src="logo.png" class="logo"></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa"><img src="close.png" height="20px" width="20px" onclick="hidemenu()"></i>
+
+            <ul>
+              <li class="a"><a href="index.html">HOME &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+              <li class="b"><a href="products.html">PRODUCTS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+              <li class="c"><a href="goshala.html">GOSHALA &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+              <li class="f"><a href="attr.html">ATTRACATIONS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+              <li class="e"><a href="bookings.html">BOOKINGS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+              <li class="c"><a href="contact.html">CONTACT &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+              <li class="d"><a href="about.html">ABOUT &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+               
+            </ul>  
+        </div>
+        <i class="faa"><img src="menu.png" height="20px" width="20px" onclick="showmenu()"></i>
+    </nav>
+</section>
+<section class="community-involvement">
+    <div class="containerb">
+      <h2>Nearby Attractions</h2>
+            <h3 style="text-align: center;">At Fresh Picks, we are surrounded by wonderful attractions that you can explore during your visit:</h3>
+      <div class="community-projects">
+        <div class="project">
+          <img style="padding-top: 25px;" src="park.jpg" alt="Community Project 1">
+          <h3 style="padding-top: 10px;">Water Park</h3>
+          <p>Looking for some outdoor fun? We have a delightful water amusment park  <br><b>1 kilometer away</b>. It's a great place for families and children to enjoy various recreational activities and create joyful memories.</p>
+        </div>
+        <div class="project">
+          <img src="temple.jpg" alt="Community Project 2">
+          <h3>Temple</h3>
+          <p>There is a beautiful temple located just<br> 1 KM from the garden is “Sri Lakshmi Ganapathi, Sri HanumathiEswara” Temple , SiddiRaju Kandriga Village, Pichatur Mandal, Tirupati, AP 
+          </p>
+        </div>
+        <div class="project">
+          <img src="aquarium.jpg" alt="Community Project 3">
+          <h3>Aquarium</h3>
+          <p>For those fascinated by marine life, we have a charming small aquarium also located <b>1 kilometer away</b>. Explore the wonders of the underwater world and discover unique aquatic creatures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container4">
+        <div class="contact-info1">
+            <h3>Contact Us</h3>
+            <p>Email: contact@example.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+            <p>Address: 123 Main Street, City, State, Zip Code</p>
+        </div>
+        <div class="social-media">
+            <h3>Follow Us</h3><br>
+            <a href=https://www.instagram.com target="_blank"><img  src="insta.png" class="fab fa-instagram" height="28px" width="28px"></a>
+            &nbsp&nbsp&nbsp <a href=https://www.twitter.com target="_blank"><img  src="twitter.png" class="fab fa-twitter" height="30px" width="30px"></a>
+            &nbsp&nbsp&nbsp <a href=https://www.facebook.com target="_blank"><img  src="facebook.png" class="fab fa-twitter" height="30px" width="30px"></a>
+        </div>
+    </div>
+</footer>
+<script>
+  var navlinks= document.getElementById("navlinks");
+  function showmenu(){
+    navlinks.style.right="0";
+  }
+  function hidemenu(){
+    navlinks.style.right="-200px";
+  }
+ </script>
+  </body>
+  </html>
